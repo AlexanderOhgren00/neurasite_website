@@ -18,7 +18,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", overflow: "hidden"}}>
         <div>
           <Navbar homePage={homePage} problemPage={problemPage} consultantPage={consultantPage} aboutPage={aboutPage} 
           websitePage={websitePage} popupRef={popupRef}/>
