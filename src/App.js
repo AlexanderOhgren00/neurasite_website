@@ -26,7 +26,7 @@ function App() {
         <div style={{ flexGrow: 1 }}> 
           <Topbar backgroundColor={backgroundColor}/>
           <Routes>
-            <Route path="/" element={<Home setBackgroundColor={setBackgroundColor} homePage={homePage} consultantPage={consultantPage}
+            <Route path="/" element={<Home setBackgroundColor={setBackgroundColor} backgroundColor={backgroundColor} homePage={homePage} consultantPage={consultantPage}
             problemPage={problemPage} aboutPage={aboutPage} websitePage={websitePage} popupRef={popupRef}/>}/>
             <Route path="/about" element={<h1>About</h1>}/>
             <Route path="*" element={<h1>Not Found</h1>}/>

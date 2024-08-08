@@ -24,12 +24,12 @@ function debounce(func, wait, immediate) {
     };
 };
 
-const Home = ({homePage, setBackgroundColor, popupRef, aboutPage, consultantPage, websitePage}) => {
+const Home = ({homePage, setBackgroundColor, backgroundColor, popupRef, aboutPage, consultantPage, websitePage}) => {
 
-    let oldScrollY = 0;
     const sliderImagesRef = useRef(null);
     const sliderTextRef = useRef(null);
     const [submitText, setSubmitText] = useState("Kopiera");
+    let oldScrollY = 0;
 
     const handleButton = () => {
         console.log("clicked")
@@ -107,7 +107,7 @@ const Home = ({homePage, setBackgroundColor, popupRef, aboutPage, consultantPage
             }
     }, true);
 
-    }, []);
+    }, [oldScrollY, setBackgroundColor]);
 
     return (
         <div ref={homePage} className={styles.pageContainer} id='container'>

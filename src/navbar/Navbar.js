@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import homestyles from '../home/Home.module.css';
 import HomeIcon from './navbarIcons/HomeIcon';
 import AboutIcon from './navbarIcons/AboutIcon';
 import NeurasiteIcon from '../home/homeIcons/NeurasiteIcon';
-import { useRef } from 'react';
 import SuitCaseIcon from './navbarIcons/SuitCaseIcon';
 import LaptopIcon from './navbarIcons/LaptopIcon';
 import PhoneIcon from '../home/homeIcons/PhoneIcon';
