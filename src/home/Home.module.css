@@ -1,0 +1,457 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pageContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.homeContainer {
+    display: flex;
+    background-color: black;
+    background-image: radial-gradient(rgb(100, 100, 190) 1px, transparent 1px);
+    background-size: 50px 50px;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 15px;
+    padding: 40px 20px 40px 20px;
+}
+
+.homeContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.homeContainer img {
+    clip-path: inset(0 20% 0 30% round 5% 20% 0 10%);
+}
+
+
+.homeContainer h1 {
+    color: rgb(8, 185, 97);
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    text-align: left;
+    text-shadow: 0px 1px 2px #798e7b
+}
+
+.homeContainer h3 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    text-align: left;
+}
+
+.homeContainer p {
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    margin: 0;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+  
+.button {
+    text-align: center;
+    padding: 1em 3em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit--user-select: none;
+    touch-action: manipulation;
+}
+  
+.button:before {
+    content: "hello";
+    background: linear-gradient(
+      45deg,
+      rgb(33, 170, 216),
+      rgb(33, 170, 216),
+      rgb(33, 170, 216),
+      rgb(33, 170, 216),
+      rgb(255, 255, 255),
+      rgb(33, 170, 216),
+      rgb(33, 170, 216),
+      rgb(33, 170, 216),
+      rgb(33, 170, 216)
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opactiy 0.3s ease-in-out;
+    border-radius: 10px;
+}
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+.button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.frontpageLogo {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+
+.frontpageLogo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover
+}
+
+.myWorkContainer {
+    display: flex;
+   background-color: rgb(25, 25, 25);
+   flex-direction: column;
+   align-items: center;
+   padding: 0 0 40px 0;
+}
+
+.myWorkContainer h1 {
+    color: rgb(8, 185, 97);
+}
+
+.imageFader {
+    position: relative;
+    width: 90%;
+    height: 500px;
+    background-color: rosybrown;
+}
+
+.imageFader div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation-name: imageFade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+.imageFader img p {
+    color: white;
+    font-size: 2rem;
+}
+
+
+.subContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(25, 25, 25);
+    overflow: hidden;
+}
+
+.subContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 15px 0;
+    overflow-x: hidden;
+}
+
+.subContainer h1 {
+    color: rgb(33, 170, 216);
+    font-size: 2rem;
+    text-shadow: 0px 1px 2px #4e655e
+}
+
+.subContainer h2 {
+    color: white;
+    margin: 0;
+}
+
+.subContainer h3 {
+    color: white;
+    margin: 0;
+}
+
+.subContainer p {
+    color: white;
+    margin: 0;
+}
+
+.biographyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.portrait {
+    width: 250px;
+    height: 400px;
+    background-color: rgb(15, 15, 15);
+    margin-left: auto;
+}
+
+.benefitContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: black;
+    background-image: radial-gradient(rgb(100, 100, 190) 1px, transparent 1px);
+    background-size: 50px 50px;
+    gap: 50px;
+}
+
+.benefitContainer h2 {
+    color: rgb(33, 170, 216);
+}
+
+.benefitContainer h3 {
+    color: rgb(33, 170, 216);
+}
+
+.benefitContainer p {
+    margin: 0 0 50px 0;
+    color: white;
+    width: 250px;
+    text-align: center;
+}
+
+.benefitContainer div {
+    display: flex;
+}
+
+.benefitContainer div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    background-image: radial-gradient(rgb(100, 100, 190) 1px, transparent 1px);
+    background-size: 50px 50px;
+    gap: 50px;
+    padding: 40px 10px 40px 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.aboutContainer h1{
+    color: rgb(33, 170, 216);
+    text-shadow: 0px 1px 2px #4e655e
+}
+
+.aboutContainer p {
+    max-width: 400px;
+    color: white;
+    margin: 0;
+}
+
+.aboutImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 5px rgb(8, 185, 97);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.popupFader {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.5);
+    z-index: 1000;
+}
+
+.fadeActive {
+    display: block;
+}
+
+.popupContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 40px 40px 40px;
+    gap: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s ease;
+    background-color: rgb(25, 25, 25);
+    color: rgb(8, 185, 97);
+    border-radius: 10px;
+    border: 2px solid rgb(8, 185, 97);
+    animation: 2s infinite alternate ease-out breathing-color;
+    filter: drop-shadow(0px 0px 50px rgb(31, 208, 119));
+}
+
+.popupContainer h3 {
+    margin: 0;
+    color: white;
+}
+
+.callArea {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.callArea p {
+    margin: 0;
+    color: white;
+}
+
+.inputArea {
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+
+.inputArea input {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 5px 5px 5px 5px;
+    border: none;
+}
+
+.inputArea button {
+    background-color: rgb(8, 185, 97);
+    padding: 5px 5px 5px 5px;
+    color: white;
+    border: none;
+}
+
+
+.inputArea button:hover {
+    background-color: rgb(37, 185, 234);
+    cursor: pointer;
+}
+
+.sliderText {
+    opacity: 0;
+    transform: translateX(110%);
+}
+
+.sliderTextTwo {
+    opacity: 0;
+    transform: translateX(-110%);
+}
+
+.active {
+    opacity: 1;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    transform: translateX(0%);
+}
+
+@keyframes imageFade {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes breathing-color {
+    from {
+        filter: drop-shadow(0px 0px 20px rgb(8, 187, 97));
+        border: 2px solid rgb(8, 185, 97);
+    }
+    to {
+        filter: drop-shadow(0px 0px 50px rgb(155, 252, 204));
+        border: 2px solid rgb(155, 252, 204);
+    }
+}
+
+
+.imageFader div:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.imageFader div:nth-of-type(2) {
+    animation-delay: 2s;
+}
+
+.imageFader div:nth-of-type(3) {
+    animation-delay: 4s;
+}
+
+.imageFader div:nth-of-type(4) {
+    animation-delay: 6s;
+}

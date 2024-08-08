@@ -1,0 +1,14 @@
+.laptopIcon {
+    display: none;
+}
+
+.laptopIcon:hover {
+    color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+
+@media (max-width: 1800px) {
+    .laptopIcon {
+        display: block;
+    }
+}

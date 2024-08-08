@@ -1,0 +1,64 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(25, 25, 25);
+    padding: 20px 40px 20px 40px;
+}
+
+.firstContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(8, 185, 97);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.firstContainer:hover {
+    color: rgb(155, 252, 204);
+
+}
+
+.secondContainer {
+    display: flex;
+    color: rgb(233, 105, 192);
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    color: rgb(233, 105, 192);
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all 1s;
+}
+
+.iconContainer:hover {
+    cursor: pointer;
+    color: rgb(246, 195, 230);
+}
+
+.logoContainer {
+    display: flex;
+}
+
+.email {
+    color: #848282;
+}
+
+.email p {
+    margin: 0;
+}
