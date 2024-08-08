@@ -1,14 +1,8 @@
 .suitCaseIcon {
-    display: none;
+    display: block;
 }
 
 .suitCaseIcon:hover {
     color: rgb(184, 184, 184);
     cursor: pointer;
-}
-
-@media (max-width: 1800px) {
-    .suitCaseIcon {
-        display: block;
-    }
 }
