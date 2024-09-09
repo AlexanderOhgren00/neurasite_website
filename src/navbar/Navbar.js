@@ -23,14 +23,14 @@ const Navbar = ({homePage, aboutPage, websitePage, consultantPage, popupRef}) =>
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.container}>
-                <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}><NeurasiteIcon width={70} height={70}/></div>
+                <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}><NeurasiteIcon width={50} height={70}/></div>
             </div>
             <div className={styles.secondContainer}>
                 <div className={styles.stickyContainer}>
                     <div className={styles.homeButton}>
                         <div style={{display: "flex", alignItems: "center", gap: "5px"}} onClick={() => scrollTo(homePage)}><HomeIcon /></div>
                     </div>
-                    <div className={styles.navButtons} style={{backgroundColor: "black"}}>
+                    <div className={styles.navButtons} style={{backgroundColor: "#14151f"}}>
                         <div onClick={() => scrollTo(websitePage)}><LaptopIcon width={30} height={30}/></div>
                         <div onClick={() => scrollTo(consultantPage)}><SuitCaseIcon width={30} height={30}/></div>
                         <div onClick={() => scrollTo(aboutPage)}><AboutIcon width={30} height={30}/></div>

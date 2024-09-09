@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: rgb(25, 25, 25);
-    padding: 20px 40px 20px 40px;
+    background-color: #191b29;
 }
 
 .firstContainer {
@@ -39,7 +38,7 @@
     justify-content: center;
     align-items: center;
     width: 35px;
-    color: rgb(233, 105, 192);
+    color: #ff8e00;
     height: 35px;
     border-radius: 50%;
     border: 2px solid white;
@@ -48,11 +47,12 @@
 
 .iconContainer:hover {
     cursor: pointer;
-    color: rgb(246, 195, 230);
+    color: white;
 }
 
 .logoContainer {
     display: flex;
+    color: #00f0b5
 }
 
 .email {

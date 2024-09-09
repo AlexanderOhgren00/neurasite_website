@@ -1,13 +1,13 @@
 .frontPageIcon {
-    color: rgb(8, 187, 97);
+    color: #00f0b5;
     animation: 2s infinite alternate ease-out breathing-color;
-    filter: drop-shadow(0px 0px 50px rgb(31, 208, 119));
+    filter: drop-shadow(0px 0px 50px #00f0b5);
 }
 
 @keyframes breathing-color {
     from {
-        color: rgb(8, 187, 97);
-        filter: drop-shadow(0px 0px 20px rgb(8, 187, 97));
+        color: #00f0b5;
+        filter: drop-shadow(0px 0px 20px #00f0b5);
     }
     to {
         color: rgb(198, 250, 224);

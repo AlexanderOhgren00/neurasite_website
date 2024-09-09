@@ -10,22 +10,19 @@
 
 .homeContainer {
     display: flex;
-    background-color: black;
+    background-color: #14151f;
     background-image: radial-gradient(rgb(100, 100, 190) 1px, transparent 1px);
     background-size: 50px 50px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
-    flex-direction: row;
     flex-wrap: wrap-reverse;
-    gap: 15px;
     padding: 40px 20px 40px 20px;
 }
 
-.homeContainer div {
+.frontpageText {
+    text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 15px;
 }
 
@@ -35,12 +32,11 @@
 
 
 .homeContainer h1 {
-    color: rgb(8, 185, 97);
-    font-size: 3rem;
-    text-align: center;
+    color: #00f0b5;
     margin: 0;
     text-align: left;
-    text-shadow: 0px 1px 2px #798e7b
+    text-shadow: 0px 1px 2px #798e7b;
+    font-size: 2.5rem;
 }
 
 .homeContainer h3 {
@@ -63,12 +59,15 @@
 }
   
 .button {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 1em 3em;
     border: none;
+    max-width: 350px;
     outline: none;
     color: rgb(255, 255, 255);
-    background: #111;
+    background: #663399;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -76,58 +75,6 @@
     user-select: none;
     -webkit--user-select: none;
     touch-action: manipulation;
-}
-  
-.button:before {
-    content: "hello";
-    background: linear-gradient(
-      45deg,
-      rgb(33, 170, 216),
-      rgb(33, 170, 216),
-      rgb(33, 170, 216),
-      rgb(33, 170, 216),
-      rgb(255, 255, 255),
-      rgb(33, 170, 216),
-      rgb(33, 170, 216),
-      rgb(33, 170, 216),
-      rgb(33, 170, 216)
-    );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    transition: opactiy 0.3s ease-in-out;
-    border-radius: 10px;
-}
-  
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  
-.button:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #222;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
 }
 
 .frontpageLogo {
@@ -198,8 +145,9 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    background-color: rgb(25, 25, 25);
+    background-color: #191b29;
     overflow: hidden;
+    padding: 0 20px 0 20px;
 }
 
 .subContainer div {
@@ -212,8 +160,7 @@
 }
 
 .subContainer h1 {
-    color: rgb(33, 170, 216);
-    font-size: 2rem;
+    color: #c58bff;
     text-shadow: 0px 1px 2px #4e655e
 }
 
@@ -251,18 +198,18 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: black;
+    background-color: #14151f;
     background-image: radial-gradient(rgb(100, 100, 190) 1px, transparent 1px);
     background-size: 50px 50px;
     gap: 50px;
 }
 
 .benefitContainer h2 {
-    color: rgb(33, 170, 216);
+    color: #00f0b5;
 }
 
 .benefitContainer h3 {
-    color: rgb(33, 170, 216);
+    color: #00f0b5;
 }
 
 .benefitContainer p {
@@ -286,7 +233,7 @@
 .aboutContainer {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #14151f;
     background-image: radial-gradient(rgb(100, 100, 190) 1px, transparent 1px);
     background-size: 50px 50px;
     gap: 50px;
@@ -296,7 +243,7 @@
 }
 
 .aboutContainer h1{
-    color: rgb(33, 170, 216);
+    color: #c58bff;
     text-shadow: 0px 1px 2px #4e655e
 }
 
@@ -310,7 +257,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: solid 5px rgb(8, 185, 97);
+    border: solid 5px #00f0b5;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -342,12 +289,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 2s ease;
-    background-color: rgb(25, 25, 25);
-    color: rgb(8, 185, 97);
+    background-color: #191b29;
+    color: #00f0b5;
     border-radius: 10px;
-    border: 2px solid rgb(8, 185, 97);
+    border: 2px solid #00f0b5;
     animation: 2s infinite alternate ease-out breathing-color;
-    filter: drop-shadow(0px 0px 50px rgb(31, 208, 119));
+    filter: drop-shadow(0px 0px 50px #00f0b5);
 }
 
 .popupContainer h3 {
@@ -374,14 +321,14 @@
 }
 
 .inputArea input {
-    background-color: rgb(71, 71, 71);
+    background-color: #14151f;
     color: white;
     padding: 5px 5px 5px 5px;
     border: none;
 }
 
 .inputArea button {
-    background-color: rgb(8, 185, 97);
+    background-color: #00f0b5;
     padding: 5px 5px 5px 5px;
     color: white;
     border: none;
@@ -430,8 +377,8 @@
 
 @keyframes breathing-color {
     from {
-        filter: drop-shadow(0px 0px 20px rgb(8, 187, 97));
-        border: 2px solid rgb(8, 185, 97);
+        filter: drop-shadow(0px 0px 20px #00f0b5);
+        border: 2px solid #00f0b5;
     }
     to {
         filter: drop-shadow(0px 0px 50px rgb(155, 252, 204));

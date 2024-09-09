@@ -17,7 +17,7 @@ const Footer = () => {
             <div className={styles.firstContainer}>
                 <div className={styles.logoContainer}>
                     <NeurasiteIcon width={70} height={70}/>
-                    <h2 style={{color: "rgb(33, 170, 216)"}}>Neurasite</h2>
+                    <h2 style={{color: "white"}}>Neurasite</h2>
                 </div>
                 <div className={styles.email}>
                     <p>alexander.neurasite@gmail.com</p>

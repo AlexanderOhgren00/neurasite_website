@@ -8,7 +8,7 @@ import { useRef } from "react";
 
 function App() {
 
-  const [backgroundColor, setBackgroundColor] = useState("rgb(20, 20, 20)");
+  const [backgroundColor, setBackgroundColor] = useState("#191b29");
   const problemPage = useRef(null);
   const aboutPage = useRef(null);
   const websitePage = useRef(null);
